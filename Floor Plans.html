@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floor Plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+          .navbar-nav li {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .navbar-brand {
+    margin-right: 150px;
+    margin-left: 30px;
+  }
+  .navbar {
+    position: sticky;
+    top: 0px;
+  }
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 
+.content3 {
+  padding-top: 1px;
+}
+
+  .navbar-nav .nav-link {
+    margin-right: 50px;
+  }
+  .navbar-nav .nav-link:hover {
+    color: blue;
+  }
+        .text14{
+        color: #2B2E66;
+        font-family: Roboto;
+        font-size: 46.435px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 113.5%;
+        }
+        .text15{
+            color: #999;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 135%;
+        }
+        .block3{
+            margin-left:50px;
+        }
+        .tower1,.tower2,.tower3,.tower4,.tower5,.tower6,.tower7,.tower8{
+            color: #D6B25E;
+            text-align: right;
+            font-family: Roboto;
+            font-size: 15.728px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            text-transform: uppercase;
+            display: inline-flex;
+            padding: 16px 40px;
+            justify-content: center;
+            align-items: center;
+            gap: 7.49px;
+            border:1px solid #D6B25E;
+            margin:20px;
+        }
+        .tower1:hover,.tower2:hover,.tower3:hover,.tower4:hover,.tower5:hover,.tower6:hover,.tower7:hover,.tower8 :hover{
+            color: #FFFFFF;
+            background-color: #D6B25E;
+        }
+        #picture{
+            width:800px; 
+            height:600px;
+            border:1px solid #D6B25E
+        }
+        @media (max-width:700px){
+            #picture{
+                width:100%;
+            }
+            .text14{
+                text-align: center;
+            }
+            .text15{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid content3">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="images/logo.png" style="width:180px; height:100px;"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" href="index.html">Why invest in Hyderabad</a>
+                          <a class="nav-link active" href="Amenities.html">Amenities</a>
+                          <a class="nav-link active" href="Floor Plans.html">Floor Plans</a>
+                          <a class="nav-link active" href="#">Price</a>
+                          <a class="nav-link active" href="#">Our Projects</a>
+                          <a class="nav-link active" style="display: inline-flex; padding: 16px 32; justify-content: center; align-items: center; gap: 7.49px; margin-left: 10px;  background-color:#2B2E66; color: aliceblue;
+                          " href="#">Request a call back</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 mt-5" clas="block3">
+                <h1 class="text14">Floor Plans</h1>
+                <p class="text15">Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it.</p>
+                <div class="towers">
+                    <button class="tower1">tower1</button>
+                    <button class="tower2">tower2</button>
+                    <button class="tower3">tower3</button>
+                    <button class="tower4">tower4</button>
+                    <button class="tower5">tower5</button>
+                    <button class="tower6">tower6</button>
+                    <button class="tower7">tower7</button>
+                    <button class="tower8">tower8</button>
+                    
+                  </div>
+            </div>
+            <div class="col-md-7">
+                <img src="images/towerTOWER1.png" id="picture" class="mx-auto d-block">
+            </div>
+        </div>
+    </div>
+    <script>
+            window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    var buttons = document.querySelectorAll('.tower1, .tower2, .tower3, .tower4, .tower5, .tower6, .tower7, .tower8');
+    var picture = document.querySelector("#picture");
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var buttonText = this.innerText;
+            var imageDisplay = "images/tower" +buttonText+ ".png";
+            picture.setAttribute("src", imageDisplay);
+        });
+    });
+
+    </script>
+</body>
+</html>

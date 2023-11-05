@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why invest in Hyderabad</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+  .navbar-nav li {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .navbar-brand {
+    margin-right: 150px;
+    margin-left: 30px;
+  }
+  .navbar-nav .nav-link {
+    margin-right: 50px;
+  }
+  .navbar-nav .nav-link:hover {
+    color: blue;
+  }
+  .navbar {
+    position: sticky;
+    top: 0px;
+  }
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} 
+.content1{
+  padding-top: 1px;
+}
+  .box{
+     width:350px;
+     background-color: white;
+     padding:40px 40px 48px 40px;
+     position:absolute;
+     top:300px;
+     left:1050px;
+  }
+  .box form{
+    display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content: center;
+  }
+  .background{
+      background-image: url('images/background.jpg');
+      position: relative;
+      background-size: cover;
+      height: 700px; 
+      width:100%;
+  }
+  .img1{
+      width: 700px; 
+      height: 700px; 
+      flex-shrink: 0;
+    }
+  .box input[type="text"],
+            .box input[type="tel"],
+            .box input[type="email"]{
+             width: 100%;
+            }
+  .text-overlay{
+    display: none;
+    text-align: center;
+  }
+  .box3{
+    margin-left:40px;
+  }
+  .one,.two,.three,.four{
+    width:200px;
+    padding:12px;
+    border:1px solid #D6B25E;
+  }
+  .first,.second{
+    display: flex;
+    flex-direction: row;
+    margin:40px;
+    margin-left: 0;
+  }
+  .img2{
+    width: 100%; 
+    height: 500px;
+  }
+  .txt{
+    display: inline-flex; 
+    padding: 12.5px 32px;
+    text-align: center;
+    gap: 10px; 
+    background: #2B2E66; 
+    color:#FFFF
+  }
+  .content{
+      position:absolute; 
+      top:50px;
+      left: 50px; 
+      z-index: 1;
+      width:500px;
+}
+  .text2{
+    color:#FFF;
+    font-family: Roboto; 
+    font-size: 56px; 
+    font-style: normal; 
+    font-weight: 300; 
+    line-height: 103%;
+  }
+  .text3{
+    color: #D6B25E; 
+    font-family: Roboto;  
+    font-size: 56px;  
+    font-style: normal;  
+    font-weight: 700;  
+    line-height: 103%;  
+  }
+  .text4{
+    color: #FFFFFF; 
+    font-family: Roboto;
+    font-size: 20px; 
+    font-style: normal;  
+    font-weight: 400; 
+    line-height: 135%; 
+  }
+  .text5{
+
+    color: #FFFFFF;
+    background-color: #D6B25E;
+    width: 150px;
+    height: 30px; 
+    text-align: center; 
+    font-family: Roboto; 
+    font-size: 16px; 
+    font-style: normal;
+    font-weight: 700;  
+    line-height: 145.5%; 
+  }
+  .img3{
+    width: 100%; 
+    height: 530px;
+  }
+  .text6{
+    color: #2B2E66;
+    font-family: Roboto;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 113.5%;
+  }
+  .text7{
+    color: #2B2E66;
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 113.5%;
+
+  }
+  .text8{
+      color: #FFF;
+      text-align: right;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 145.5%;
+      display: inline-flex;
+      padding: 12.5px 32px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: #2B2E66;
+  }
+  .img4{
+    width:100%;
+    height: 838px;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .text9{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108%;
+  }
+  .text10{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .text11{
+      color: #FFF;
+      text-align: right;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 145.5%;
+      display: inline-flex;
+      padding: 12.5px 32px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: #D6B25E;
+  }
+  .text12{
+    color: #2B2E66;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 46.435px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 113.5%;
+  }
+  .text12{
+    color: #2B2E66;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 46.435px;
+    font-style: normal;
+    font-weight: 600;
+line-height: 113.5%;
+
+  }
+  .box7,.box8,.box9,.box10{
+        width: 310px;
+        height: 280px;
+        flex-shrink: 0;
+        padding: 30px;
+        margin: 30px;
+}
+  @media (max-width: 700px) {
+        .background {
+          background-image: url('images/background image 2.jpg'); 
+          background-size: cover;
+          height: 700px;
+          width: 100%;
+          position: relative;
+          }
+        .box {
+                position: static;
+                width:100%;
+                padding: 40px 40px 48px 40px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box input[type="text"],
+            .box input[type="tel"],
+            .box input[type="email"]{
+             width:400px;
+            }
+            .img1{
+               width:100%;
+            }
+            .box2{
+              display: flex;
+              justify-content: center;
+            }
+            .text-overlay{
+              display: block;
+            }
+        }
+        @media (max-width: 700px) {
+    .first, .second {
+       margin-left: 40px;
+    }
+    .text{
+       display:flex;
+       justify-content: center;
+    }
+    .one, .two, .three, .four {
+        width: 80%;
+        margin: 0 auto; 
+        margin-bottom: 20px; 
+        text-align: center;
+    }
+  }
+  @media (max-width:700px){
+    .img2{ 
+      width: 100%;
+      height:800px;
+    }
+    .content {
+      position:absolute; 
+      top:50px;
+      left: 35px; 
+      z-index: 1;
+      width:375px;
+}
+
+    .text2{
+      text-align: center;
+      color: #FFFFFF;
+      font-family: Roboto;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 103%;
+    }
+    .text3{
+      text-align: center;
+    color: #D6B25E;
+     font-family: Roboto;
+     font-size: 32px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 103%;
+    }
+    .text4{
+      color: #FFFFFF;
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 135%;
+      letter-spacing: -0.5px;
+    }
+    .box1{
+      display: flex;
+      justify-content: center;
+    }
+    .text5{
+    color: #FFFFFF;
+    font-family: Roboto; 
+    font-size: 16px; 
+    font-style: normal;
+    font-weight: 700;  
+    line-height: 145.5%; 
+    }
+    .text6{
+      color: #2B2E66;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 113.5%;
+    }
+    .text7{
+      color: #2B2E66;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 113.5%;
+    }
+  .box4{
+    display:flex;
+    justify-content: center;
+  }
+}
+  @media (max-width:700px){
+     .img4{
+      background-image: url('images/backgroundimage6.jpg');
+      background-size: cover;
+      margin-top: 30px;
+     }
+     .text9{
+      font-family: Roboto;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 35px;
+      letter-spacing: 0em;
+      text-align: center;
+
+     }
+     .text10{
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #CED0F1;
+
+     }
+     .text11{
+      color: #FFF;
+      text-align: right;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 145.5%;
+      display: inline-flex;
+      padding: 12.5px 32px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: #D6B25E;
+  }
+  .box5{
+    display:flex;
+    justify-content: center;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="container-fluid content1">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="images/logo.png" style="width:180px; height:100px;"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" href="index.html">Why invest in Hyderabad</a>
+                          <a class="nav-link active" href="Amenities.html">Amenities</a>
+                          <a class="nav-link active" href="Floor Plans.html">Floor Plans</a>
+                          <a class="nav-link active" href="#">Price</a>
+                          <a class="nav-link active" href="#">Our Projects</a>
+                          <a class="nav-link active" style="display: inline-flex; padding: 16px 32; justify-content: center; align-items: center; gap: 7.49px; margin-left: 10px;  background-color:#2B2E66; color: aliceblue;
+                          " href="#">Request a call back</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="background">
+            <div class="text-overlay"style="position:absolute; top:40px; left:90px">
+                <h1 style="color: #2B2E66; text-align: center; font-family: Roboto;  font-size: 32px;  font-style: normal;  font-weight: 700;  line-height: 89.5%;">NRI’s Best <br>Investment Idea</h1>
+                <p style="color: #747474; text-align: center; font-family: Roboto;  font-size: 20px; font-style: normal; font-weight: 400; line-height: 133%;">The wisest investment in <br>Hyderabad, the prices are always <br>on the rise!<br>At Narsingi, near Kokapet.</p>
+                <div class="box4">
+                  <h2 class="text8">Download Brochure</h2>
+                </div>
+              </div>
+        </div>  
+         <div class="box">
+                  <h4 style="margin-bottom: 30px; font-size: 2em;">ENQUIRE NOW</h4>
+                  <form>
+                    <input type="text" placeholder="Your Full Name" style="margin-bottom: 20px;">
+                    <input type="tel" placeholder="(012) 345 678"style="margin-bottom: 20px;">
+                    <input type="Email" placeholder="Your Email iD" style="margin-bottom: 48px;">
+                    <input type="submit" placeholder="Submit" style="font-size: 16px; color: #FFF; background-color: #2B2E66; height: 48px; padding: 15px 72px;">
+                  </form>
+              </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-md-7">
+            <img src="images/Cam8_ 1.jpg" class=" img1 image-fluid mx-auto d-block" >
+        </div>
+        <div class="col-md-5 mt-5">
+            <h1 class="text" style="color: #2B2E66; font-family: Roboto; font-size: 42px; font-style: normal; font-weight: 300; line-height: 103%;">Should you really</h1>
+            <h1 class="text" style="color: #2B2E66;  font-family: Roboto; font-size: 50px;  font-style: normal;  font-weight: 700;  line-height: 103%;  ">Invest in real estate?</h1>
+            <h5 class="text" style="color: #D6B25E; font-family: Roboto; font-size: 24px; font-style: normal; font-weight: 400; line-height: 113.5%">Check if real estate is for you.</h5>
+        <div class="first">
+            <div class="one" style='margin-right: 50px;'>
+                <img src="images/Layer_1.png" class="mx-auto d-block">
+                <p style="color: #757575; margin-top: 12px; text-align: center; font-family: Roboto;  font-size: 15px; font-style: normal;  font-weight: 400;line-height: 114%;">Property rates increased by an average of 15.1% YoY.</p>
+            </div>
+            <div class="two">
+                <img src="images/Layer_2.png" class="mx-auto d-block">
+                <p style="color: #757575; margin-top: 12px; text-align: center; font-family: Roboto; font-size: 15px; font-style: normal; font-weight: 400; line-height: 114%;">Small, big or large, there’s an investment for everyone.</p>
+            </div>
+        </div>
+        <div class="second">
+            <div class="three" style='margin-right: 50px;'>
+                <img src="images/Layer_3.png" class="mx-auto d-block">
+                <p style="color: #757575; margin-top: 12px;  text-align: center;  font-family: Roboto;  font-size: 15px; font-style: normal; font-weight: 400; line-height: 114%;">Benefit of a stable cash flow, profitable returns and other tax advantages.</p>
+            </div>
+            <div class="four">
+                <img src="images/Layer_4.png" class="mx-auto d-block">
+                <p style="color: #757575; margin-top: 12px;  text-align: center;  font-family: Roboto;  font-size: 15px; font-style: normal; font-weight: 400; line-height: 114%;">Risks associated with investment are minimal compared to stock market.</p>
+            </div>
+        </div class="box1">
+        <h4 class="txt">Know More</h4>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 mt-3">
+        <div style="position: relative;">
+          <img src="images/background image 3.jpg" class="img2">
+          <div class="content ">
+            <h2 class="text2">Invest Your Best,</h2>
+            <h2  class="text3">In Your Motherland</h2>
+            <p  class="text4" >Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it.</p>
+            <div class="box2"><h4  class="text5">Contact US</h4></div>
+          </div>
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(
+            81.84% 34.27% at 55.21% 41.96%,
+            rgba(43, 46, 102, 0.15) 0%, 
+            rgba(43, 46, 102, 0.75) 100%) "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row mt-3">
+      <div class="col-md-5">
+      <div class="box3">
+           <h1 class="text6">Why invest in India?</h1>
+           <h1 class="text7">Why in Hyderabad?</h1>
+           <div class="first">
+           <div class="one" style='margin-right: 50px;'>
+            <img src="images/Layer_5.png" class="mx-auto d-block">
+            <p style="color: #757575; margin-top: 12px; text-align: center; font-family: Roboto;  font-size: 15px; font-style: normal;  font-weight: 400;line-height: 114%;">11% rise in demand in Hyderabad's residential market.</p>
+        </div>
+        <div class="two">
+            <img src="images/Layer_6.png" class="mx-auto d-block">
+            <p style="color: #757575; margin-top: 12px; text-align: center; font-family: Roboto; font-size: 15px; font-style: normal; font-weight: 400; line-height: 114%;">Hyderabad’s real estate market ranks highest in competition with 8 major cities.</p>
+        </div>
+    </div>
+    <div class="second">
+        <div class="three " style='margin-right: 50px;'>
+            <img src="images/Layer_7.png" class="mx-auto d-block">
+            <p style="color: #757575; margin-top: 12px;  text-align: center;  font-family: Roboto;  font-size: 15px; font-style: normal; font-weight: 400; line-height: 114%;">Migrants prefer this progressive city and make up to 24% of the population.</p>
+        </div>
+        <div class="four">
+            <img src="images/Layer_8.png" class="mx-auto d-block">
+            <p style="color: #757575; margin-top: 12px;  text-align: center;  font-family: Roboto;  font-size: 15px; font-style: normal; font-weight: 400; line-height: 114%;">Telangana registered 31.44% growth in IT exports in 2022-23</p>
+        </div>
+        </div>
+        <div class="box4">
+          <h2 class="text8">Chat With Us</h2>
+        </div>
+      </div>
+    </div>  
+      <div class="col-md-7">
+        <div style="position: relative;">
+          <img src="images/background image 4.jpg" class="img3 image-fluid">
+      </div> 
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div style=" background: url('images/backgroundimage5.jpg'); background-size: 100% cover;  position: relative;" class="img4 image-fluid">
+                <div class="txt2" style="position: absolute; top: 50px; text-align: center; margin-left: 40px; margin-right: 40px;">
+                    <h1 class="text9">What is Vasavi Atlantis?</h1>
+                    <p class="text10">Created by the experienced Vasavi Group with an impeccable 27-year legacy around the core tenet of ‘Happy Living’, Vasavi Atlantis has been designed as an ‘Investment in Happiness'.</p>
+                    <p class="text10">As you behold the 8 Towers of Vasavi Atlantis rising into the clouds, you will feel Happiness pulsating through you, making your spirit soar. Vasavi Group brings you 4BHK and 3 BHK flats for sale in Narsingi Hyderabad.</p>
+                    <p class="text10">As you behold the 8 Towers of Vasavi Atlantis rising into the clouds, you will feel Happiness pulsating through you, making your spirit soar. Vasavi Group brings you 4BHK and 3 BHK flats for sale in Narsingi Hyderabad.</p>
+                    <div class="box5">
+                      <h2 class="text11">Schedule A Visit</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+     <div class="row mt-5">
+      <div class="col-md-12">
+        <div class="box6" style="margin-left:30px; margin-right: 30px;">
+        <h1 class="text12">Hyderabad’s real estate growth in the last 3 years</h1>
+        <p class="text13">Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it.</p>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 box7" style="background-color: #2B2E66;">
+        <img src="images/Layer_9.png" style="color: #D6B25E;" class="mx-auto d-block">
+        <h6 style="color: #FFF; text-align: center; font-family: Roboto; font-size: 20.971px; font-style: normal; font-weight: 400; line-height: 113.5%;">At least</h6>
+        <h1 style="color: #FFF; font-family: Roboto; font-size: 67px; font-style: normal; text-align: center; font-weight: 700; line-height: 107%;">25<sup>%</sup>-45<sup>%</sup></h1>
+        <h6 style="color: #FFF; text-align: center; font-family: Roboto; font-size: 20.971px; font-style: normal; font-weight: 400; line-height: 113.5%;">peak in average rental spends</h6>
+      </div>
+      <div class="col-md-3 box7" style="background-color: #2B2E66;">
+        <img src="images/Layer_10.png" style="color: #D6B25E;" class="mx-auto d-block">
+        <h1 style="color: #FFF; font-family: Roboto; font-size: 67px; font-style: normal; text-align: center; font-weight: 700; line-height: 107%;">200%</h1>
+        <h6 style="color: #FFF; text-align: center; font-family: Roboto; font-size: 20.971px; font-style: normal; font-weight: 400; line-height: 113.5%;">rapid increase in investments in</h6>
+      </div>
+      <div class="col-md-3 box7" style="background-color: #2B2E66;">
+        <img src="images/Layer_11.png" style="color: #D6B25E;" class="mx-auto d-block">
+        <h1 style="color: #FFF; font-family: Roboto; font-size: 67px; font-style: normal; text-align: center; font-weight: 700; line-height: 107%;">26%</h1>
+        <h6 style="color: #FFF; text-align: center; font-family: Roboto; font-size: 20.971px; font-style: normal; font-weight: 400; line-height: 113.5%;">YoY growth in property registrations in July 2023</h6>
+      </div>
+      <div class="col-md-3 box7" style="background-color: #2B2E66;">
+        <img src="images/Layer_12.png" style="color: #D6B25E;" class="mx-auto d-block">
+        <h1 style="color: #FFF; font-family: Roboto; font-size: 67px; font-style: normal; text-align: center; font-weight: 700; line-height: 107%;">25%</h1>
+        <h6 style="color: #FFF; text-align: center; font-family: Roboto; font-size: 20.971px; font-style: normal; font-weight: 400; line-height: 113.5%;">increase in price of 1 sq.ft in real estate</h6>
+      </div>
+      
+    </div>
+    
+</div>
+<script>
+     window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
